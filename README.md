@@ -31,6 +31,7 @@ options:
     -w WORDLIST, --wordlist WORDLIST      wordlist path
     -t THREAD, --thread THREAD            number of threads 
 ```
+You can increase execution speed by setting a higher number of thread, depending on your CPU capacity
 
 ## Disclaimer
 
