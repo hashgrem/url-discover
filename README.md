@@ -2,7 +2,7 @@
 
 urlDiscover is an open source tool that automates the process of finding hidden pages, files, and directories on websites. It can be usefull for recon step on CTF's challenges and penetration test.
 
-![alt text](https://github.com/hashgrem/url-discover/blob/master/image.png?raw=true)
+![alt text](https://github.com/hashgrem/url-discover/blob/master/image.jpg?raw=true)
 
 ## Installation
 First of all, you need python3 to use urlDiscover, you can download it from this link: https://www.python.org/downloads/
