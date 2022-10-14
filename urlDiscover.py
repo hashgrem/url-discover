@@ -32,11 +32,9 @@ def GetWordlist(wordlist):
 		w.close()
 
 		return words
-
 	except:
 		print(f"{Fore.RED}Error: check your wordlist path{Style.RESET_ALL}")
 		sys.exit()
-
 
 def SplitWordlist(wordlist, nb_chuncks):
 		words = GetWordlist(wordlist)
@@ -47,14 +45,12 @@ def SplitWordlist(wordlist, nb_chuncks):
 def Bruteforce(chuncked_wordlists, url, codes):
 	timer_start = time.perf_counter()
 	threads = []
-
 	try:
 		print(f"{Fore.GREEN}[+] Scan successfully started...\n{Style.RESET_ALL}")
 		for each_list in chuncked_wordlists:
 			threads.append(Thread(target=Attack, args=(each_list, url, codes)))
 		for t in threads:
 			t.start()
-
 	except:
 		print(f"{Fore.RED}Oops ! An error occured while starting threads.{Style.RESET_ALL}")
 		sys.exit()
@@ -96,7 +92,6 @@ if __name__ == "__main__":
 
 	args = Menu()
 	url = str(args[0])
-	nb_threads = args[2]
 
 	if validators.url(url) != True:
 		print(f"""{Fore.RED}Error: check your URL syntax. Url needs to be given with double quotes, or without any quotes.{Style.RESET_ALL}""")
@@ -110,7 +105,8 @@ if __name__ == "__main__":
 			print(f"{Fore.RED}Error: URL is unreachable.{Style.RESET_ALL}")
 			sys.exit()
 		
-		codes = [200, 204, 301, 302, 307, 401, 407]
+		codes = [200, 204, 301, 302, 307, 401, 407] #http's status codes
+		nb_threads = args[2]
 		wordlist_path = str(args[1])
 		lists = SplitWordlist(wordlist_path, nb_threads)
 		now = datetime.now()
