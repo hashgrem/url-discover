@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-To display basic usage and switches, you can use help tag, by running the following command:
+To display basic usage and switches, you can use help tag (-h or --help), by running the following command:
 ```
 python3 urlDiscover.py -h
 
