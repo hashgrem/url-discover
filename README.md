@@ -8,11 +8,13 @@ urlDiscover is an open source tool that automates the process of finding hidden 
 First of all, you need python3 to use urlDiscover, you can download it from this link: https://www.python.org/downloads/
 
 You can download the zip version on github, or traditionally clone the repository from your command line:
-```git clone https://github.com/hashgrem/url-discover.git
+```
+git clone https://github.com/hashgrem/url-discover.git
 ```
 
 After dowloading, you'll need to install libraries to run the script correctly. You can run the following command:
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 
 
