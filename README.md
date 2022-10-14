@@ -17,8 +17,20 @@ After dowloading, you'll need to install libraries to run the script correctly. 
 pip install -r requirements.txt
 ```
 
-
 ## Usage
+
+To display basic usage and switches, you can use help tag, by running the following command:
+```
+python3 urlDiscover.py -h
+
+usage: urlDiscover.py [-h] -u URL -w WORDLIST -t THREAD
+
+options:
+    -h, --help                            show this help message and exit
+    -u URL, --url URL                     url you want to test
+    -w WORDLIST, --wordlist WORDLIST      wordlist path
+    -t THREAD, --thread THREAD            number of threads 
+```
 
 ## Disclaimer
 
