@@ -35,3 +35,4 @@ You can increase execution speed by setting a higher number of thread, depending
 
 ## Disclaimer
 
+A little remind: you are the only one responsible for the use you make of this tool. You must be allowed by your target or by the organisation you are testing
